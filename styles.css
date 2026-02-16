@@ -1,0 +1,319 @@
+/* ================= Base ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ================= Header ================= */
+.site-header {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 55px;   /* Adjust if needed */
+  width: auto;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e63946;
+  border-bottom: 2px solid #e63946;
+}
+
+/* ================= Hero ================= */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+/* ================= Buttons ================= */
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #e63946;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #c62835;
+}
+
+.btn-secondary {
+  border: 2px solid #e63946;
+  color: #e63946;
+}
+
+.btn-secondary:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+/* ================= Sections ================= */
+.section {
+  padding: 4rem 0;
+}
+
+.section-dark {
+  background: #f4f4f4;
+  background-size: cover;       /* fills section without distortion */
+  background-position: center;  /* keeps image centered */
+  background-repeat: no-repeat; /* avoids tiling */
+}
+
+
+.section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ================= Services ================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #ffffffb1;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgb(0, 0, 0);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* ================= Features ================= */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.feature {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* ================= CTA ================= */
+.cta {
+  background: #e63946;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.cta h3 {
+  margin-bottom: 1.5rem;
+}
+
+/* ================= Footer ================= */
+.site-footer {
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+/* ================= Brands ================= */
+.brands {
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.brand-item img {
+  max-width: 120px;
+  width: 100%;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.brand-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ================= Page Hero ================= */
+.page-hero {
+  background: #111;
+  color: #ffffff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.page-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ================= Contact Layout ================= */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ================= Contact Form Card ================= */
+.contact-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+  margin-bottom: 1.5rem;
+}
+
+/* ================= Form Styling ================= */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #e63946;
+}
+
+/* ================= Contact Info Card ================= */
+.contact-info-card {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.contact-info-card h3 {
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #e63946;
+  align-content: center;
+}
+

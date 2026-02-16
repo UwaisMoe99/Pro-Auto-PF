@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Pro Auto Part Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header class="site-header">
+  <div class="container nav-container">
+      <a href="index.html" class="logo">
+  <img src="logo black.png" alt="Pro Auto Part Finder Logo"> 
+   <span>Pro Auto Part Finder</span>
+</a>
+   
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= Contact Hero ================= -->
+<section class="page-hero">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>Need a part? Provide your vehicle details and we’ll source it for you.</p>
+  </div>
+</section>
+
+<!-- ================= Contact Section ================= -->
+<section class="section">
+  <div class="container contact-wrapper">
+
+    <!-- Contact Form -->
+    <div class="contact-card">
+      <h3>Request a Quote</h3>
+      <form 
+  class="contact-form"
+  action="https://formspree.io/f/mwvnvrav"
+  method="POST"
+>
+
+  <!-- Email Subject -->
+  <input type="hidden" name="_subject" value="New Parts Request - Pro Auto Part Finder">
+
+  <!-- Redirect After Submit (Optional) -->
+  <!-- Change to your real domain later -->
+  <input type="hidden" name="_redirect" value="index.html">
+
+  <!-- Form Fields -->
+  <input type="text" name="full_name" placeholder="Full Name" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="text" name="phone" placeholder="Phone Number">
+
+  <input type="text" name="vehicle" placeholder="Vehicle Make & Model">
+
+  <textarea name="part_needed" placeholder="Describe the part you need..." rows="5"></textarea>
+
+  <button type="submit" class="btn-primary">Submit Request</button>
+
+</form>
+
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info-card">
+      <h3>Contact Information</h3>
+
+      <div class="info-item">
+        <strong>Phone</strong>
+        <p>+27 83 524 0777</p>
+      </div>
+
+      <div class="info-item">
+        <strong>Email</strong>
+        <p>proautopartfinder@gmail.com</p>
+      </div>
+
+      <div class="info-item">
+        <strong>Location</strong>
+        <p>johsnnesburg, South Africa</p>
+      </div>
+
+      <div class="info-item">
+        <strong>Business Hours</strong>
+        <p>Mon – Fri:<br>
+           8:00 AM – 4:00 PM</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= Footer ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>Pro Auto Part Finder</strong></p>
+    <p>Reliable Automotive Parts Sourcing</p>
+    <p>&copy; 2026 Pro Auto Part Finder. All rights reserved.</p>
+    <p>Built by HyperionWeb</p>
+  </div>
+</footer>
+
+</body>
+</html>
